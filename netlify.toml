@@ -1,0 +1,14 @@
+# Static site — Netlify just serves the encrypted index.html at the root.
+[build]
+  publish = "."
+  command = ""
+
+# Privacy + safety headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer"
+    # Keep it out of search engines
+    X-Robots-Tag = "noindex, nofollow"

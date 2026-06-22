@@ -1,0 +1,8 @@
+# Never commit the plaintext master or build artifacts
+wedding-plan.html
+build.ps1
+node_modules/
+.staticrypt.json
+encrypted/
+decrypted/
+*.log
